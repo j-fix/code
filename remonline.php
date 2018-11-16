@@ -1,4 +1,5 @@
 <?php
+
 error_reporting(E_ALL);
 ini_set("display_error", true);
 ini_set("error_reporting", E_ALL);
@@ -45,4 +46,5 @@ class remonline{
 }
 $remonline = new remonline("$api_key");
 echo '<pre>'. $remonline->getBranches().'</pre>', PHP_EOL;
+
 ?>
