@@ -5,7 +5,7 @@ ini_set("error_reporting", E_ALL);
 class remonline{
   protected $token_info = array();
   protected $api_url = "https://api.remonline.ru/";
-  private   $api_key = "";
+  private   $api_key = "";                          // ВСТАВИТЬ API - КЛЮЧ
   private   $cURL = null;
   public function __construct($api_key){
     if(!isset($api_key)) exit();
@@ -36,7 +36,7 @@ class remonline{
     $this->token_info = array('token' => $result->token, "time" => time(), "renew" => false);
     //var_dump($result);
   }
-  public function getBranches(){
+  public function getBranches(){                       // ПОЛУЧЕНИЕ СПИСКА МАСТЕРСКИХ КОМПАНИИ
     $this->__checkToken();
     curl_setopt($this->cURL, CURLOPT_POST, 0);
     curl_setopt($this->cURL, CURLOPT_URL, $this->api_url . "branches/?" . http_build_query(array("token" => $this->token_info['token'])));
