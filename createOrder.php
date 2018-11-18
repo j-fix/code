@@ -123,7 +123,7 @@ print 'userdata:'.'<br>';
 //print_r($dat);
 echo '<br/><br/>';
 $dataord = array(
-    'branch_id'=>29131,
+    'branch_id'=>29131,       // id Мастерской
     'order_type'=>48939,      // 48939 По гарантии, 48938 Платный ;
     'brand' => $brand,             
     'model'=>$model,
