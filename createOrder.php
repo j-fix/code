@@ -1,4 +1,5 @@
 <?php
+
 class Remonline
 {
     protected $api_url = 'https://api.remonline.ru/';
