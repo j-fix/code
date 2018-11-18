@@ -43,19 +43,15 @@ class remonline{
     curl_setopt($this->cURL, CURLOPT_URL, $this->api_url . "branches/?" . http_build_query(array("token" => $this->token_info['token'])));
     return curl_exec($this->cURL);
   }
-  public function createOrder() {
-
+  public function createOrder(){
     $ch = curl_init();
-
     curl_setopt($ch, CURLOPT_URL, "https://api.remonline.ru/order/");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, "token=".$this->token_info['token']."&branch_id=29131&client_id=8542861&order_type=48939&brand=Apple&model=iPhone 6&serial=123456&malfunction=Broken phone&assigned_at=1444761830376&custom_fields={\"testid\": \"testvalue\"}");
-    curl_setopt($ch, CURLOPT_POST, 1);
-    
+    curl_setopt($ch, CURLOPT_POST, 1);  
     $headers = array();
     $headers[] = "Content-Type: application/x-www-form-urlencoded";
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-    
     $result = curl_exec($ch);
     if (curl_errno($ch)) {
         echo 'Error:' . curl_error($ch);
