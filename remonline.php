@@ -1,5 +1,5 @@
 <?php
-
+//'order_type' => 48939 По гарантии, 48938 Платный ;
 error_reporting(E_ALL);
 ini_set("display_error", true);
 ini_set("error_reporting", E_ALL);
