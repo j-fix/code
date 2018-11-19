@@ -5,11 +5,23 @@
   
   // phone: array[string] - Телефон клиента; - так написано в API
   
-  $phone = array('phone[]'=>79778860657)   // так в коде
+  $phone = array('phone'=>79778860657)   // так в коде
   
   // ЛИБО
   
-  $phone = array('phone[]'=> '79778860657')   // так в коде
+  $phone = array('phone'=> '79778860657')   // так в коде
+    
+    // В ИТОГЕ ПОЛУЧАЕМ
+    
+    (
+    [email] => RumyantsevGT@ya.ru
+    [phone] => Array
+        (
+            [phone] => 79778860657
+        )
+
+    [name] => Egor
+)
   
   
   /* НО ОТВЕТ ОТ REMONLINE ТАКОЙ
