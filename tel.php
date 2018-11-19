@@ -24,7 +24,7 @@
 )
   
   
-  /* НО ОТВЕТ ОТ REMONLINE ТАКОЙ
+  // НО ОТВЕТ ОТ REMONLINE ТАКОЙ
   
                       [phone] => Array
                         (
