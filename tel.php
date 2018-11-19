@@ -22,9 +22,21 @@
 
     [name] => Egor
 )
+    
+    // ИЛИ
+    
+    (
+    [email] => RumyantsevGT@ya.ru
+    [phone] => Array
+        (
+            [0] => 79778860657
+        )
+
+    [name] => Egor
+)
   
   
-  // НО ОТВЕТ ОТ REMONLINE ТАКОЙ
+  // НО ОТВЕТ ОТ REMONLINE ВСЕГДА ТАКОЙ
   
                       [phone] => Array
                         (
