@@ -3,7 +3,7 @@
   
   //   СОЗДАНИЕ КЛИНТА
   
-  // phone: array[string] - Телефон клиента; - так написано в API
+  // phone: array[string] - Телефон клиента; - так написано в API   https://remonline.ru/docs/api/#apisection2
   
   $phone = array('phone'=>79778860657)   // так в коде
   
